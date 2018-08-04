@@ -10,7 +10,7 @@ class App extends Component {
     const store = configureStore({venues: {list: []}, votes: {participants: []}})
     return (
       <Provider store={store}><div>
-        
+        <h1>Lunchplace</h1>
         <SearchVenues />
         <VoteVenues participants={[]}/>
       </div>
