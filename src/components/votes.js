@@ -19,7 +19,7 @@ export const VoteVenuesView = ({venues, participants, addParticipant,sendVote}) 
             <th>Participants</th>
             {venues.map((item,index) => {
               return (
-                <th className={`${votes[index] === highestVotation ? 'winner': ''}`}>
+                <th className={`${votes[index] === highestVotation && highestVotation > 0 ? 'winner': ''}`}>
                   {item.venue.name}
                   <span>
                     {item.venue.categories[0].name}

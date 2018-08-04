@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import configureStore from './store'
 import SearchVenues from './containers/search'
 import VoteVenues from './containers/votes'
+import './App.css'
 
 class App extends Component {
   render() {

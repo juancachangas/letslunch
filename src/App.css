@@ -1,28 +1,74 @@
-.App {
-  text-align: center;
+.search{
+  padding: 10px;
+  font-size: 18px;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.search__geocode{
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  color: #aaa;
+  border-radius: 3px;
+  font-size: 18px;
 }
+.search__button{
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  margin-left: 20px;
+}
+button {
   color: white;
+  background: #544bb4;
+  padding: 6px 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+  min-width: 140px;
+  min-height: 33px;
+  outline: none;
+  font-weight: 300;
 }
-
-.App-title {
-  font-size: 1.5em;
+.vote-toll {
+   background: white;
+   border-collapse: collapse;
+   margin: 10px;
+    
 }
-
-.App-intro {
-  font-size: large;
+table, th, td {
+  border: 1px solid #ddd;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+td {
+  padding: 4px
+}
+td input{
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  color: #aaa;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  box-sizing: border-box
+}
+th{
+  padding: 10px;
+  color: #544bb4;
+  font-size: 14px;
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  vertical-align: text-top;
+}
+th.winner{
+  background: #d0f5b3;
+}
+th span{
+  display: block;
+  color: #bbb;
+  font-size: 10px;
+}
+th:first-of-type{
+  color: #aaa;
+  vertical-align: bottom;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 300px;
 }
