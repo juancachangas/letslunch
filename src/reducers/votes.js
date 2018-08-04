@@ -13,9 +13,9 @@ export default (state = initialState, action) =>{
           payload.participant]
       }
     case VOTES_SET_VOTE: {
-      const {index, venueIdex} = payload
+      const {index, venueIndex} = payload
       const participants = [...state.participants]
-      participants[index].venueIdex = venueIdex
+      participants[index].venueIndex = venueIndex
       return {
         participants
       }
