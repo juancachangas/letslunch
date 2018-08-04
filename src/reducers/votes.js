@@ -14,14 +14,10 @@ export default (state = initialState, action) =>{
       }
     case VOTES_SET_VOTE: {
       const {index, venueIdex} = payload
+      const participants = [...state.participants]
+      participants[index].venueIdex = venueIdex
       return {
-        participants: [
-          ...state.participants,
-          [index]: {
-            ...state.participants[index],
-            venue: venueIdex
-          }
-        ]
+        participants
       }
     }
     default:
